@@ -16,9 +16,6 @@
       color: #374151;
       padding: 100px 20px 60px;
       text-align: center;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s forwards;
     }
     header img {
       width: 200px;
@@ -49,48 +46,29 @@
       padding: 80px 20px;
       max-width: 1000px;
       margin: 0 auto;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s forwards;
     }
-    section:nth-of-type(2) { animation-delay: 0.5s; }
-    section:nth-of-type(3) { animation-delay: 1s; }
-    section:nth-of-type(4) { animation-delay: 1.5s; }
     h2 {
-      text-align: center;
-      font-size: 36px;
+      color: #4f46e5;
       margin-bottom: 20px;
+      text-align: center;
     }
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .services, .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
     }
-    .service-card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
+    .services div, .gallery img {
+      width: 300px;
+      text-align: center;
     }
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .gallery-grid img {
+    .services div img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 12px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
     }
   </style>
 </head>
@@ -113,58 +91,37 @@
     <p>Learn. Play. Perform.</p>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Sky 10 Music School offers world-class music education with passionate teachers and a dynamic learning environment. Whether you're a beginner or an experienced musician, we have programs designed to fit your musical journey.</p>
-  </section>
-
   <!-- Services Section -->
-  <section id="services" style="background-color: #f9f9f9;">
+  <section id="services">
     <h2>Our Services</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>🎤 Music Lessons</h3>
-        <p>Vocal, Guitar, Piano, Drums, Violin, and more.</p>
+    <div class="services">
+      <div>
+        <img src="images/service1.jpg" alt="Guitar Lessons">
+        <h3>Guitar Lessons</h3>
+        <p>Learn guitar from beginner to advanced.</p>
       </div>
-      <div class="service-card">
-        <h3>🎶 Group Classes</h3>
-        <p>Band coaching, Choir singing, and Music theory basics.</p>
+      <div>
+        <img src="images/service2.jpg" alt="Piano Lessons">
+        <h3>Piano Lessons</h3>
+        <p>Master the piano with our expert teachers.</p>
       </div>
-      <div class="service-card">
-        <h3>🎼 Recording & Production</h3>
-        <p>Studio sessions, Songwriting workshops, and Music production training.</p>
-      </div>
-      <div class="service-card">
-        <h3>🎹 Special Programs</h3>
-        <p>Kids foundation courses, Hobby programs for adults, and Certifications.</p>
-      </div>
-      <div class="service-card">
-        <h3>🎵 Events & Performances</h3>
-        <p>Student concerts, Competitions, and Public gigs.</p>
+      <div>
+        <img src="images/service3.jpg" alt="Vocal Coaching">
+        <h3>Vocal Coaching</h3>
+        <p>Unlock your voice with professional coaching.</p>
       </div>
     </div>
   </section>
 
   <!-- Gallery Section -->
   <section id="gallery">
-    <h2>Our Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/gallery1.jpg" alt="Students performing">
-      <img src="images/gallery2.jpg" alt="Guitar class">
-      <img src="images/gallery3.jpg" alt="Piano session">
-      <img src="images/gallery4.jpg" alt="Recording studio">
-      <img src="images/gallery5.jpg" alt="Choir group">
-      <img src="images/gallery6.jpg" alt="Violin practice">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="images/gallery1.jpg" alt="Student Performance">
+      <img src="images/gallery2.jpg" alt="Music Class">
+      <img src="images/gallery3.jpg" alt="Guitar Class">
+      <img src="images/gallery4.jpg" alt="Piano Class">
     </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Feel free to reach out for class details, enrollment, or any inquiries!</p>
-    <p>Email: info@sky10musicschool.com</p>
-    <p>Phone: <a href="tel:0726142590" style="color: #4f46e5; text-decoration: none;">0726142590</a></p>
   </section>
 
 </body>
