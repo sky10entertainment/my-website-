@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <img src="images/sky10.png" alt="Sky 10 Music School Logo" width="200">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sky 10 Music School</title>
@@ -13,9 +12,9 @@
       scroll-behavior: smooth;
     }
     header {
-      background: #f3f4f6;
-      color: #374151;
-      padding: 100px 20px 60px;
+      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      color: white;
+      padding: 50px 20px;
       text-align: center;
     }
     header img {
@@ -39,10 +38,6 @@
       color: #374151;
       font-weight: bold;
     }
-    nav a:hover {
-      color: #4f46e5;
-      transition: 0.3s;
-    }
     section {
       padding: 80px 20px;
       max-width: 1000px;
@@ -50,80 +45,52 @@
     }
     h2 {
       color: #4f46e5;
-      margin-bottom: 20px;
+    }
+    footer {
+      background: #f3f4f6;
       text-align: center;
-    }
-    .services, .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .services div, .gallery img {
-      width: 300px;
-      text-align: center;
-    }
-    .services div img {
-      width: 100%;
-      border-radius: 12px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 12px;
+      padding: 30px 20px;
+      margin-top: 50px;
     }
   </style>
 </head>
 
 <body>
-
-  <!-- Navigation -->
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- Header -->
-  <header id="home">
+  <header>
     <img src="images/sky10.png" alt="Sky 10 Music School Logo">
-    <h1>Welcome to Sky 10 Music School</h1>
+    <h1>Sky 10 Music School</h1>
     <p>Learn. Play. Perform.</p>
   </header>
 
-  <!-- Services Section -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Sky 10 Music School offers the best environment to learn, enjoy, and master music. We believe music is for everyone!</p>
+  </section>
+
   <section id="services">
     <h2>Our Services</h2>
-    <div class="services">
-      <div>
-        <img src="images/service1.jpg" alt="Guitar Lessons">
-        <h3>Guitar Lessons</h3>
-        <p>Learn guitar from beginner to advanced.</p>
-      </div>
-      <div>
-        <img src="images/service2.jpg" alt="Piano Lessons">
-        <h3>Piano Lessons</h3>
-        <p>Master the piano with our expert teachers.</p>
-      </div>
-      <div>
-        <img src="images/service3.jpg" alt="Vocal Coaching">
-        <h3>Vocal Coaching</h3>
-        <p>Unlock your voice with professional coaching.</p>
-      </div>
-    </div>
+    <ul>
+      <li>Guitar Classes</li>
+      <li>Piano Lessons</li>
+      <li>Vocal Coaching</li>
+      <li>Studio Recording</li>
+    </ul>
   </section>
 
-  <!-- Gallery Section -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="images/gallery1.jpg" alt="Student Performance">
-      <img src="images/gallery2.jpg" alt="Music Class">
-      <img src="images/gallery3.jpg" alt="Guitar Class">
-      <img src="images/gallery4.jpg" alt="Piano Class">
-    </div>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Call us: 0726142590</p>
+    <p>Email: info@sky10musicschool.com</p>
   </section>
 
+  <footer>
+    &copy; 2025 Sky 10 Music School. All rights reserved.
+  </footer>
 </body>
 </html>
