@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Page Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #ffffff;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #374151;
+      font-weight: bold;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    section:nth-of-type(2) {
+      animation-delay: 0.5s;
+    }
+    section:nth-of-type(3) {
+      animation-delay: 1s;
+    }
+    section:nth-of-type(4) {
+      animation-delay: 1.5s;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #111827;
+    }
+    p {
+      color: #6b7280;
+      line-height: 1.6;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .feature-card {
+      background: #f9fafb;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 80px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+      animation-delay: 2s;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover {
+      background: #2563eb;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to Our Website</h1>
+  <p>We create solutions that help you grow.</p>
+  <a href="#about" class="btn-primary">Learn More</a>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#features">Features</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>We are a passionate team dedicated to building the best websites and apps. Our mission is to empower businesses with cutting-edge technology and creative solutions that drive success and growth.</p>
+</section>
+
+<section id="features">
+  <h2>Features</h2>
+  <div class="features">
+    <div class="feature-card">
+      <h3>Fast Performance</h3>
+      <p>Optimized code ensures your site runs blazingly fast, keeping your users engaged.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Responsive Design</h3>
+      <p>Beautifully adaptive layouts that look stunning on all devices, from phones to desktops.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Secure and Reliable</h3>
+      <p>Top-notch security practices keep your data and your users' information safe.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Want to work with us or learn more? Reach out today!</p>
+  <a href="mailto:info@example.com" class="btn-primary">Email Us</a>
+</section>
+
+<footer>
+  <p>&copy; 2025 Your Company. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
