@@ -1,96 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sky 10 Music School</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Inter', sans-serif;
-      scroll-behavior: smooth;
+      line-height: 1.6;
+      background-color: #f9fafb;
     }
     header {
       background: linear-gradient(135deg, #4f46e5, #3b82f6);
       color: white;
-      padding: 50px 20px;
       text-align: center;
-    }
-    header img {
-      width: 200px;
-      height: auto;
-      margin-bottom: 20px;
+      padding: 80px 20px;
     }
     nav {
       display: flex;
       justify-content: center;
-      gap: 20px;
-      background: #ffffff;
-      padding: 15px;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 15px 0;
       position: sticky;
       top: 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       z-index: 1000;
     }
     nav a {
+      margin: 0 15px;
       text-decoration: none;
       color: #374151;
-      font-weight: bold;
+      font-weight: 600;
     }
-    section {
-      padding: 80px 20px;
+    .section {
+      padding: 60px 20px;
       max-width: 1000px;
-      margin: 0 auto;
+      margin: auto;
     }
-    h2 {
-      color: #4f46e5;
+    .section h2 {
+      color: #111827;
+      margin-bottom: 20px;
+    }
+    .services, .contact {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
     footer {
-      background: #f3f4f6;
+      background: #1f2937;
+      color: white;
       text-align: center;
-      padding: 30px 20px;
-      margin-top: 50px;
+      padding: 40px 20px;
     }
   </style>
 </head>
-
 <body>
   <header>
-    <img src="images/sky10.png" alt="Sky 10 Music School Logo">
     <h1>Sky 10 Music School</h1>
-    <p>Learn. Play. Perform.</p>
+    <p>Learn. Create. Perform.</p>
   </header>
 
   <nav>
-    <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#about">About Us</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
+  <div class="section" id="services">
+    <div class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Piano Lessons</li>
+        <li>Guitar & Bass Training</li>
+        <li>Vocal Coaching</li>
+        <li>Music Production Classes</li>
+        <li>Drum & Percussion Training</li>
+        <li>Kids Music Programs</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section" id="about">
     <h2>About Us</h2>
-    <p>Sky 10 Music School offers the best environment to learn, enjoy, and master music. We believe music is for everyone!</p>
-  </section>
+    <p>
+      Sky 10 Music School is dedicated to nurturing musical talent in a fun, professional, and creative environment. Whether you're a beginner or an aspiring professional, our tutors are here to help you grow.
+    </p>
+  </div>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Guitar Classes</li>
-      <li>Piano Lessons</li>
-      <li>Vocal Coaching</li>
-      <li>Studio Recording</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Call us: 0726142590</p>
-    <p>Email: info@sky10musicschool.com</p>
-  </section>
+  <div class="section" id="contact">
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Phone:</strong> 0726142590</p>
+      <p><strong>Location:</strong> Nairobi, Kenya</p>
+      <p><strong>Email:</strong> sky10music@gmail.com</p>
+    </div>
+  </div>
 
   <footer>
-    &copy; 2025 Sky 10 Music School. All rights reserved.
+    <p>&copy; 2025 Sky 10 Music School. All rights reserved.</p>
   </footer>
 </body>
 </html>
