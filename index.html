@@ -3,31 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="google881bd63fbd8c529b" />
   <title>Sky 10 Music School | Best Music School in Ruiru</title>
   <meta name="description" content="Sky 10 Music School offers piano, guitar, vocal, and violin lessons in Ruiru, Kenya. Join the best music academy in Ruiru for quality music education.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* CSS styles here */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; background-color: #f9fafb; line-height: 1.6; }
-    header { background: linear-gradient(135deg, #4f46e5, #3b82f6); color: white; text-align: center; padding: 80px 20px; }
-    header img { max-width: 150px; margin-bottom: 20px; }
-    nav { display: flex; justify-content: center; background: white; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
-    nav a { margin: 0 15px; text-decoration: none; color: #374151; font-weight: 600; }
-    .section { padding: 60px 20px; max-width: 1000px; margin: auto; }
-    .section h2 { color: #111827; margin-bottom: 20px; }
-    .services, .contact { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); }
-    footer { background: #1f2937; color: white; text-align: center; padding: 40px 20px; }
-    .social-link a { color: #3b82f6; text-decoration: none; font-weight: bold; }
-    .icon { width: 20px; height: 20px; margin-right: 10px; vertical-align: middle; }
-    ul li { margin-bottom: 10px; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .gallery-item { text-align: center; }
-    .gallery-item img { width: 100%; border-radius: 12px; cursor: pointer; }
-    .gallery-item p { margin-top: 8px; font-size: 14px; color: #374151; }
-    .lightbox { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; }
-    .lightbox img { max-width: 90%; max-height: 80vh; border-radius: 12px; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background-color: #f9fafb;
+    }
+    header {
+      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header img {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #374151;
+      font-weight: 600;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #111827;
+      margin-bottom: 20px;
+    }
+    .services, .contact {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    footer {
+      background: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .social-link a {
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery-item {
+      text-align: center;
+    }
+    .gallery-item img {
+      width: 100%;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .gallery-item p {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #374151;
+    }
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 12px;
+    }
   </style>
 </head>
 <body>
@@ -132,7 +217,7 @@
       <p><strong>Phone (WhatsApp):</strong> <a href="https://wa.me/254726142590" target="_blank">0726 142590</a></p>
       <p><strong>Location:</strong> Ruiru & Nairobi, Kenya</p>
       <p><strong>Email:</strong> sky10music@gmail.com</p>
-      <p class="social-link"><strong>Instagram:</strong> <a href="https://www.instagram.com/skytenmusicschool" target="_blank">@skytenmusicschool</a></p>
+      <p class="social-link"><strong>Instagram:</strong> <a href="https://www.instagram.com/skytenmusicschool?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@skytenmusicschool</a></p>
     </div>
   </div>
 
